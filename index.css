@@ -1,0 +1,35 @@
+* {
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.2rem;
+    /* border: 1px solid red; */
+}
+body {
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+h1 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+        font-size: 2rem;
+}
+
+header {
+    background-color: rgb(165, 165, 165);
+    padding: 1rem;
+    width: 100%;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        font-style: italic;
+        font-weight: 500;
+}
+
+table {
+    margin: 1rem;
+    border-spacing: 0.5rem;
+}
