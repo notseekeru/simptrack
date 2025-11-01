@@ -31,5 +31,17 @@ main {
 
 table {
     margin: 1rem;
-    border-spacing: 0.5rem;
+        border-spacing: 0.5rem;
 }
+table button{
+        border: none;
+        padding: .1rem;
+        background-color: whitesmoke;
+}
+
+.weight {
+    display: flex;
+    justify-content: space-between;
+}
+
+
