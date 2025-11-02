@@ -41,22 +41,6 @@ document.addEventListener('click', (e) => {
     }
 })
 
-// Initial rendering of the table (not strictly needed, since renderHtml does this)
-for (const x of storedStorage) {
-    let checkbox = ''
-    for (let i = 0; i < x.sets; i++) {
-        checkbox += `<input type="checkbox">`
-    }
-    html += `
-        <tr data-id="${x.id}">
-        <td>${x.id}. ${x.work}</td>
-        <td>${checkbox}</td>
-        <td>${x.reps}</td>
-        <td class="weight"><button data-action="minus" data-id="${x.id}">-</button>${x.weight}<button data-action="plus" data-id="${x.id}">+</button></td>
-        </tr>
-    `
-}
-
 // Function to render the exercise table based on storedStorage
 function renderHtml() {
     let html = ''
