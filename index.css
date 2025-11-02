@@ -1,11 +1,11 @@
 * {
     font-family: "Work Sans", sans-serif;
     font-size: 1.2rem;
-    /* border: 1px solid red; */
+    color: #e0e0e0;
 }
 body {
     margin: 0;
-    background-color: whitesmoke;
+    background-color: #181818;
 }
 
 h1 {
@@ -13,11 +13,12 @@ h1 {
     display: flex;
     justify-content: center;
     justify-items: center;
-        font-size: 2rem;
+    font-size: 2rem;
+    color: #fafafa;
 }
 
 header {
-    background-color: rgb(165, 165, 165);
+    background-color: #232323;
     padding: 1rem;
     width: 100%;
 }
@@ -25,23 +26,23 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-        font-style: italic;
-        font-weight: 500;
+    font-style: italic;
+    font-weight: 500;
 }
 
 table {
     margin: 1rem;
-        border-spacing: 0.5rem;
-}
-table button{
-        border: none;
-        padding: .1rem;
-        background-color: whitesmoke;
+    border-spacing: 0.5rem;
+    background-color: #232323;
 }
 
-.weight {
-    display: flex;
-    justify-content: space-between;
+th, td {
+    background-color: #232323;
 }
 
-
+table button {
+    border: none;
+    padding: .1rem;
+    background-color: #232323;
+    color: #fafafa;
+}
