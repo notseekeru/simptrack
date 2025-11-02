@@ -1,4 +1,4 @@
-export let exercises = [
+export const exercises = [
     {
         id: 1,
         "work": "Barbell Squat",
