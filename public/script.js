@@ -1,6 +1,6 @@
 import exercises from './workout.js'
 
-const tableEl = document.getElementById('table')
+const tableEl = document.getElementById('table')    
 
 if (!localStorage.getItem("storageSet")) {
   localStorage.setItem("storageSet", JSON.stringify(exercises))
