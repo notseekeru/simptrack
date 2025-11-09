@@ -4,22 +4,18 @@ import gymExercises from './workout.js'
 // Get the table element where exercises will be rendered
 
 
-// Check if localStorage already has exercise data; if not, initialize it
 if (!localStorage.getItem("storageSet")) {
     localStorage.setItem("storageSet", JSON.stringify(gymExercises))
 }
 
-// Load exercises from localStorage
 let storedStorage = JSON.parse(localStorage.getItem("storageSet"))
 
-// Helper function to save the current state to localStorage
 function saveToLocalStorage() {
     localStorage.setItem('storageSet', JSON.stringify(storedStorage))
 }
 
-// Listen for clicks on the document to handle plus/minus button actions
 document.addEventListener('click', (e) => {
-    const exerId = e.target.dataset.id // Get the exercise id from the button
+    const exerId = e.target.dataset.id
     switch (e.target.dataset.action) {
         case 'minus' :
             if (storedStorage[exerId].weight > 0) {
@@ -38,7 +34,6 @@ document.addEventListener('click', (e) => {
     }
 })
 
-// Function to render the exercise table based on storedStorage
 function renderHtml() {
     const tableEl = document.getElementById('table')
         let html = ``;
@@ -64,5 +59,4 @@ function renderHtml() {
     tableEl.innerHTML = html
 }
 
-// Initial render of the table
 renderHtml()
